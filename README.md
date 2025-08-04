@@ -2,6 +2,7 @@
 
 ## Overview
 This repository contains a Verilog implementation of a finite state machine (FSM) to control an automatic washing machine. The design simulates the operation of a washing machine through states such as checking the door, filling water, adding detergent, washing, draining, and spinning. The project includes a comprehensive testbench to verify the FSM's behavior under various scenarios, with waveform generation for debugging.
+- For this project we are using **Mealy Model**.
 
 ## Access Project at EDAPlayground
  Visit the [EDA Playground link](https://www.edaplayground.com/x/GMvz) to directly access the code.
@@ -13,6 +14,10 @@ This repository contains a Verilog implementation of a finite state machine (FSM
   - Contains the testbench module `top_tb`, which tests the design under multiple scenarios and generates a VCD file for waveform viewing.
 - **Timescale**: ``timescale 10ns / 1ps`
   - Time unit: 10 ns (10,000 ps), precision: 1 ps.
+
+## State Diagram
+The state diagram visually represents the **finite state machine (FSM)** controlling the washing machine. Each state corresponds to a **specific phase** in the washing process, and **transitions occur** based on **input signals and conditions**. By examining the diagram, one can easily understand the flow of operations and the logic behind each transition.
+![Waveform Reference](https://github.com/Karan-nevage/Automatic-Washing-Machine-Controller-Using-Verilog/blob/main/State%20Diagram.png)
 
 ## Module Description
 ### `automatic_washing_machine`
